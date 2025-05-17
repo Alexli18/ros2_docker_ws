@@ -13,7 +13,7 @@ class ONNXInferenceNode(Node):
         self.logger = InferenceLogger()
         self.sub = self.create_subscription(Float32MultiArray, '/bscan_clean', self.callback, 10)
         self.pub = self.create_publisher(Float32, '/alarm_score', 10)
-        self.session = ort.InferenceSession("swin_mine_detector.onnx")
+        self.session = ort.InferenceSession("resnet_mine_detector.onnx")
         self.input_name = self.session.get_inputs()[0].name
         self.output_name = self.session.get_outputs()[0].name
 
