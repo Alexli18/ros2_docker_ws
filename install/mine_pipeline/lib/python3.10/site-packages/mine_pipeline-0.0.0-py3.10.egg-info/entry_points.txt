@@ -1,0 +1,7 @@
+[console_scripts]
+ai_inference_node = mine_pipeline.ai_inference_node:main
+alarm_node = mine_pipeline.alarm_node:main
+full_pipeline = mine_pipeline.pipeline_launcher:main
+preproc_node = mine_pipeline.preproc_node:main
+sensor_sim_node = mine_pipeline.sensor_sim_node:main
+
